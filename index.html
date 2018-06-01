@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Omri Gil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="includes/style.css">
+    <script src="includes/script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        
+        <header>
+            <a href="#"><img src="images/monopoly.png"></a>    
+            <h1>If I was a rich man...</h1>
+        </header>
+
+        <form id="FORM" onsubmit = "return adressValidation" action="http://html5-book.co.il/teach/forms/get_form2.php" method="get"autocomplete="on">
+            <div class="form-group">
+                <label for="fullName">Philanthropist's Full Name</label><input id ="Name" class="form-control" placeholder="Full Name" name ="fullName">
+            </div>
+
+            <div class="form-group">
+                <label for="website">You'r bank's Website</label><input type ="url" class="form-control" aria-describedby="emailHelp"  placeholder="Enter website" name ="website">
+            </div>
+            
+            <div class="form-group">
+                <label for="bank account number">bank account number</label>
+                <input type="number" name="bank account" class="form-control" placeholder="Account num." maxlength="10">
+            </div>
+
+            <div class="form-group">
+                    <label for="password">Bank account Password</label>
+                <input type="password" name ="password" class="form-control" placeholder="Password" maxlength="8">
+                <small id="emailHelp" class="form-text text-muted">password must be 8 characters long at most.</small>
+                </div>
+
+            <div class="form-group">
+                    <label for="email address">Email address of secretary</label>
+                    <input type="email" name ="email" class="form-control"  aria-describedby="emailHelp" placeholder="Email">
+                    <small id="emailHelp" class="form-text text-muted">We will never share your email with anyone else.</small>
+                </div>
+
+            <div class="form-group">
+                <label>Phone number of secretary</label><input type ="tel" class="form-control"   placeholder="Phone Number" name ="phone">
+            </div>
+
+            <div class="form-group">
+                <label>Next Deposit due in</label> <input type ="number" class="form-control"   placeholder="How many days left until your next Deposit?" name ="birthday" min="1" max="364">
+            </div>
+
+            <div class="form-group">
+                <label for="scale">Amount deposited</label><input type ="range" class="form-control-range" id="formControlRange" name ="scale" min ="0" max ="100" step="5">
+                <small id="emailHelp" class="form-text text-muted">Deposit calculated in millions</small>
+            </div>
+
+            <div class="form-group">
+                <label>Address</label> <input id ="Address" type ="text" class="form-control"   placeholder="Enter Address" name ="address"> </label>
+            </div>
+
+            <h3>Next withdraw donated to</h3>
+            <ul class="list">
+                    <li><label> Children's Hospital <input type ="checkbox" name ="Donated[]" value ="Children's Hospital"> </label></li>
+                    <li><label> Womens rights <input type ="checkbox" name ="Donated[]" value ="Womens rights"> </label></li>
+                    <li><label> Handicapped people's rights <input type ="checkbox" name ="Donated[]" value ="Handicapped people's rights"> </label></li>
+                    <li><label> Greenpeace <input type ="checkbox" name ="Donated[]" value ="Greenpeace"> </label></li>
+            </ul>
+            
+            <h3>Method of payment</h3>
+            <ul class="list">
+                <li><div class="form-group">
+                        <label> Credit: <input type ="radio" name ="Method" value ="Credit"> </label>
+                </div></li>
+                <li><div class="form-group">
+                        <label> Cash: <input type ="radio" name ="Method" value ="Cash"> </label>
+                </div></li>
+            </ul>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Each recieves</label>
+                    <select class="form-control" name ="Each recieves">
+                        <option value="20">0.25 mil.</option>
+                        <option value="21">0.5 mil.</option>
+                        <option value="22">0.75 mil.</option>
+                        <option value="23">1 mil.</option>
+                        <option value="24">2 mil.</option>
+                        <option value="25">5 mil.</option>
+                        <option value="26">10 mil.</option>
+                    </select>
+            </div>
+
+            <div><input type="reset" id="reset" value="Reset"></div>
+
+            <label> <input type ="submit" class="btn btn-primary" id="submit" value ="submit"> </label>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
